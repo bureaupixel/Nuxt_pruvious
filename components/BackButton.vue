@@ -1,9 +1,16 @@
 <template>
   <NuxtLink v-if="to" :to="to" class="group inline-flex items-center gap-2 font-heading text-sm">
-    <IconChevronLeft class="h-3.5 w-3.5 transition-transform group-hocus:-translate-x-0.5" />
+    <div class="h-3.5 w-3.5 transition-transform group-hocus:-translate-x-0.5">
+
+
+
+
     <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m6.921 12.5l5.793 5.792L12 19l-7-7l7-7l.714.708L6.92 11.5H19v1z"></path></svg>
+
       <slot />
     </span>
+    </div>
   </NuxtLink>
 </template>
 

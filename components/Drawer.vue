@@ -17,13 +17,13 @@
   v-model="drawer"
   class="drawer bg-white dark:bg-zinc-900 opacity-95 dark:opacity-98"
   :direction="direction"
-  size="50%"
+  size="80%"
 >
   <!-- Drawer content goes here -->
     <div class="animate-fade animate-once animate-delay-[300ms] ">
       <h1 class="text-4xl font-extrabold">BUREAUPIXEL Example</h1>
       <p class="text-lg animate-fade animate-once animate-delay-[500ms]
-      ">PRUVIOUS CMS with a NUXT frontend and Github markdown files.</p>
+      ">Database and media library with a NUXT frontend.</p>
       
 
     </div>

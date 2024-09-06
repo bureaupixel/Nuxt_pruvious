@@ -69,6 +69,13 @@ export default defineCollection({
         description: 'The page where all blog posts are listed',
       },
     },
+    collectionLandingPage: {
+      type: 'link',
+      options: {
+        required: true,
+        description: 'The page where all collection posts are listed',
+      },
+    },
   },
   dashboard: {
     // Group fields in tabs
@@ -77,6 +84,7 @@ export default defineCollection({
         Header: ['menu'],
         Footer: ['copyrightText', 'socialMedia'],
         Blog: ['blogLandingPage'],
+        Collection: ['collectionLandingPage'],
       },
     ],
   },

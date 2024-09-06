@@ -59,7 +59,7 @@ import { defineBlock, imageSubfield, repeaterField, textField, textSubfield } fr
  */
 defineBlock({
   icon: 'Photo',
-  description: 'A portfolio block with a gallery of images that can be clicked to open a full-screen view.',
+  description: 'A collectionitem block with a gallery of images that can be clicked to open a full-screen view.',
 })
 
 defineProps({
@@ -67,7 +67,7 @@ defineProps({
    * @see https://pruvious.com/docs/fields/text
    */
   title: textField({
-    description: 'The title of the portfolio block',
+    description: 'The title of the collectionitem block',
   }),
 
   /**
