@@ -59,7 +59,7 @@ import { defineBlock, imageSubfield, repeaterField, textField, textSubfield } fr
  */
 defineBlock({
   icon: 'Photo',
-  description: 'A collectionitem block with a gallery of images that can be clicked to open a full-screen view.',
+  description: 'A collection item block with a gallery of images that can be clicked to open a full-screen view.',
 })
 
 defineProps({

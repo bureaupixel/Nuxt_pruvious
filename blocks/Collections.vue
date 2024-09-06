@@ -41,7 +41,7 @@ const page = computed(() => (route.query.page ? Number(route.query.page) : 1))
 
 const { data } = await useFetch<
   PaginateResult<
-    Pick<PopulatedFieldType['collections'], 'author' | 'description' | 'headline' | 'path' | 'publishDate' | 'sharingImage'>
+    Pick<PopulatedFieldType['posts'], 'author' | 'description' | 'headline' | 'path' | 'publishDate' | 'sharingImage'>
   >
 >('/api/collections', { query: { page } })
 

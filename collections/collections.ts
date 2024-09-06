@@ -5,7 +5,7 @@ import { pageLikeCollection } from '#pruvious/standard'
 export default defineCollection(
   pageLikeCollection({
     name: 'collections',
-    pathPrefix: 'collections',
+    pathPrefix: 'collection',
     icon: 'Pin',
     allowedLayouts: ['collection'],
     additionalPublicPagesFields: ['headline', 'author'],
