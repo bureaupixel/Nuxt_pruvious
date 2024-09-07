@@ -1,20 +1,20 @@
 <template>
   <Container>
-    <div class="flex space-x-4">
+    <div class="flex space-x-4 pb-10">
       <div class="max-w-content space-y-2">
         <h2 class="font-bold">{{ titleLeft }}</h2>
-        <p v-if="kickerLeft" class="text-lg">{{ kickerLeft }}</p>
+        <PruviousHTML :html="textLeft" v-if="textLeft" >{{ textLeft }}</PruviousHTML>
       </div>
       <div class="max-w-content space-y-2">
         <h2 class="font-bold">{{ titleRight }}</h2>
-        <p v-if="kickerRight" class="text-lg">{{ kickerRight }}</p>
+        <PruviousHTML :html="textRight" v-if="textRight" >{{ textRight }}</PruviousHTML>
       </div>
     </div>
   </Container>
 </template>
 
 <script lang="ts" setup>
-import { defineBlock, textField } from '#pruvious'
+import { defineBlock, textField, editorField } from '#pruvious'
 
 defineBlock({
   icon: 'H1',
@@ -22,8 +22,8 @@ defineBlock({
 
 defineProps({
   titleLeft: textField({  }),
-  kickerLeft: textField(),
+  textLeft: textField(),
   titleRight: textField({  }),
-  kickerRight: textField(),
+  textRight: textField(),
 })
 </script>

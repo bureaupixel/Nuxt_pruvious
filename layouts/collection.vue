@@ -21,7 +21,7 @@ import { defineLayout } from '#pruvious'
 import { getCollectionData, usePage } from '#pruvious/client'
 
 defineLayout({
-  allowedBlocks: ['Image', 'Prose', 'Collectionitem', 'Introtext', 'Link', 'PageIntro', 'Twocoltext',],
+  allowedBlocks: ['Image', 'Prose', 'Collectionitem', 'Link', 'Textintro', 'Textonecoll', 'Texttwocoll', 'Textthreecoll',],
 })
 
 const page = unref(usePage())
